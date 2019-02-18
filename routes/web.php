@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/info', function() {
+    //return "Hola. Información del sistema";
+    return view('paginas/info');//al usar view se entiende que estamos en la carpeta de resource y no necesitamos las extenciones
+});
+
+Route::get('/contacto', function() {
+    //return "Hola. Información del sistema";
+    return view('paginas/contacto');//al usar view se entiende que estamos en la carpeta de resource y no necesitamos las extenciones
+});
+
