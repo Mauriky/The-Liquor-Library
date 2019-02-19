@@ -21,7 +21,6 @@ Route::get('/info', function() {
 });
 
 Route::get('/contacto', function() {
-    //return "Hola. Información del sistema";
     return view('paginas/contacto');//al usar view se entiende que estamos en la carpeta de resource y no necesitamos las extenciones
 });
 
