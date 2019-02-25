@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <!-- utilizar asset para no tener problemas de referencia -->
 </head>
 <body>
     <div id="app">
@@ -32,7 +34,16 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{action('PaginaController@info')}}">Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('equipo')}}">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contacto">Contacto</a>
+                        </li>
 
                     </ul>
 

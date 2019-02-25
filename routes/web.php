@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::get('/info', 'PaginaController@info');
 Route::get('/bienvenida/{nombre}/{apellido?}', 'PaginaController@bienvenida');
 Route::get('/contacto', 'PaginaController@contacto');
+Route::get('/desarrolladores', 'PaginaController@equipo')->name('equipo');
 /*
 Route::get('/info', function() {//nombre es una variable
     //return "Hola. Información del sistema";

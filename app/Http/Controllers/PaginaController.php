@@ -21,4 +21,8 @@ class PaginaController extends Controller
                     ]);
     }
 
+    public function equipo(){
+        return view('paginas.equipo');
+    }
+
 }

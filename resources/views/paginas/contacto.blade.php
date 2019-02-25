@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('contenido')
     <h1>Nosotros te contactamos</h1>
-</body>
-</html>
+    <p class="">askdlfhkljashdfkl</p>
+    <ul class="list-inline">
+    <li class="list-inline-item">Lorem ipsum</li>
+    <li class="list-inline-item">Phasellus iaculis</li>
+    <li class="list-inline-item">Nulla volutpat</li>
+    </ul>
+@endsection
