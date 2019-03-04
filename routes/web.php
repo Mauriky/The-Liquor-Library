@@ -20,6 +20,10 @@ Route::get('/info', 'PaginaController@info');
 Route::get('/bienvenida/{nombre}/{apellido?}', 'PaginaController@bienvenida');
 Route::get('/contacto', 'PaginaController@contacto');
 Route::get('/desarrolladores', 'PaginaController@equipo')->name('equipo');
+
+Auth::routes();
+
+Route::get('/documentos','DocumentoController@index')->name('documento.index');
 /*
 Route::get('/info', function() {//nombre es una variable
     //return "Hola. Información del sistema";
