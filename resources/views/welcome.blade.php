@@ -86,7 +86,9 @@
 
                 <div class="links">
                     <a href="{{route('documento.index')}}">Documentos</a>
-            
+                    <a href="{{route('cliente.index')}}">Clientes</a>
+                    <a href="{{route('licor.index')}}">Licores</a>
+                    <a href="{{route('reporteventa.index')}}">Reporte venta</a>
                 </div>
             </div>
         </div>

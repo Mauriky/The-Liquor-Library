@@ -15,7 +15,8 @@ class DocumentoController extends Controller
        // dd($docs); //die drop arrojar lo que tiene la variable
 
        //Uso de modelo
-        $docs = Documento::where('id', '!=', 1)->get();
+        $docs = Documento::get();
+      
 
 
         return view('documentos.documentoIndex', compact('docs'));
