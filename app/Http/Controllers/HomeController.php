@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        //$this->middleware('auth');//se encarga de verificar que estes logeado en el sistema.
+        $this->middleware('auth');
     }
 
     /**

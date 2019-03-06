@@ -20,9 +20,7 @@ Route::get('/info', 'PaginaController@info');
 Route::get('/bienvenida/{nombre}/{apellido?}', 'PaginaController@bienvenida');
 Route::get('/contacto', 'PaginaController@contacto');
 Route::get('/desarrolladores', 'PaginaController@equipo')->name('equipo');
-
 Auth::routes();
-
 Route::get('/documentos','DocumentoController@index')->name('documento.index');
 Route::get('/clientes','ClienteController@index')->name('cliente.index');
 Route::get('/licores','LicorController@index')->name('licor.index');
@@ -54,7 +52,9 @@ Route::get('/contacto', function() {
 */
 
 //Se genera dos lienas de código al ejecutar el comando php artisan make:auth
-Auth::routes();
+
 
 Route::get('/home', 'HomeController@index')->name('home');
 ?>
+
+

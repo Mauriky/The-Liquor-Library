@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('contenido')
+@section('content')
 
 <h1>Clientes</h1>
 <table class="table table-hover table-dark offset-3 col-6">

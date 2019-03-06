@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
-@section('contenido')
+@section('content')
 
-<h1>Documentos</h1>
+<h1>Documentos{{session('apodo')}}</h1>
 <table class="table table-hover table-dark offset-3 col-6">
   <thead>
     <tr>

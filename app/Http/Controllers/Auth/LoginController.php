@@ -18,6 +18,7 @@ class LoginController extends Controller
     |
     */
 
+
     use AuthenticatesUsers;
 
     /**
@@ -25,8 +26,12 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
-
+    protected $redirectTo = '/';
+    protected function redirectTo()
+    {
+        session(['apodo'=>'Mauri']);
+        return 'documentos';
+    }
     /**
      * Create a new controller instance.
      *

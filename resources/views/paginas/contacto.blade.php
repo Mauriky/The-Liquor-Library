@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('contenido')
+@section('content')
     <h1>Nosotros te contactamos</h1>
     <p class="">askdlfhkljashdfkl</p>
     <ul class="list-inline">
