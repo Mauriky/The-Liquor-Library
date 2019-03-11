@@ -25,6 +25,9 @@ Route::get('/documentos','DocumentoController@index')->name('documento.index');
 Route::get('/clientes','ClienteController@index')->name('cliente.index');
 Route::get('/licores','LicorController@index')->name('licor.index');
 Route::get('/reporteventa','ReporteVentaController@index')->name('reporteventa.index');
+Route::get('/inicio',function(){
+    return view('inicio');
+});
 /*
 Route::get('/info', function() {//nombre es una variable
     //return "Hola. Información del sistema";
