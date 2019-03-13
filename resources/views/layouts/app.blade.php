@@ -44,6 +44,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contacto">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{action('DependenciaController@create')}}">Dependencia create</a>
+                        </li>
 
                     </ul>
 

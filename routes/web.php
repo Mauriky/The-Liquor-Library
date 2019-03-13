@@ -16,6 +16,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/info', 'PaginaController@info');
 Route::get('/bienvenida/{nombre}/{apellido?}', 'PaginaController@bienvenida');
 Route::get('/contacto', 'PaginaController@contacto');
@@ -58,6 +59,7 @@ Route::get('/contacto', function() {
 
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('dependencias','DependenciaController');
 ?>
 
 
