@@ -38,6 +38,7 @@ class DependenciaController extends Controller
     {
         $dep = new Dependencia();
         $dep->nombre = $request->nombre;
+        //se guarda el registro
         $dep->save();
         return redirect()->route('dependencias.index');
     }
@@ -48,9 +49,10 @@ class DependenciaController extends Controller
      * @param  \App\Dependencia  $dependencia
      * @return \Illuminate\Http\Response
      */
+    //
     public function show(Dependencia $dependencia)
-    {
-        //
+    {       
+        return view('dependencias.dependenciaShow',compact('dependencia'));
     }
 
     /**
@@ -61,7 +63,9 @@ class DependenciaController extends Controller
      */
     public function edit(Dependencia $dependencia)
     {
-        //
+        //el mismo formulari que el create
+        return view('dependencias.dependenciaForm', compact('dependencia'));
+        //depués nos movemos al update
     }
 
     /**
@@ -73,7 +77,10 @@ class DependenciaController extends Controller
      */
     public function update(Request $request, Dependencia $dependencia)
     {
-        //
+
+        $dependencia->nombre = $request->nombre;
+        $dependencia->save();
+        return redirect()->route('dependencias.show', $dependencia->id);
     }
 
     /**
@@ -84,6 +91,7 @@ class DependenciaController extends Controller
      */
     public function destroy(Dependencia $dependencia)
     {
-        //
+        $dependencia->delete();
+        return redirect()->route('dependencias.index');//puede cualquier ruta que quieras
     }
 }

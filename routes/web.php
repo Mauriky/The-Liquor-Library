@@ -57,6 +57,9 @@ Route::get('/contacto', function() {
 
 //Se genera dos lienas de código al ejecutar el comando php artisan make:auth
 
+// En caso de que haya un error de singular y plural puedes hacer esto
+//Route::resource('materiales','MaterialController')
+//->parameters(['materiales' => 'material']);
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('dependencias','DependenciaController');
