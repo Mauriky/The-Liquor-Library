@@ -36,6 +36,9 @@ class DependenciaController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nombre' => 'required|max:255|min:3|unique'
+        ]);
         $dep = new Dependencia();
         $dep->nombre = $request->nombre;
         //se guarda el registro
